@@ -3,9 +3,10 @@ import { ReactNode } from "react";
 
 interface TypeButton {
   children: ReactNode;
+  onClick: () => void;
 }
 
-const StyledButton = ({ children }: TypeButton) => {
+const StyledButton = ({ children, onClick }: TypeButton) => {
   const StyledButton = styled("button")(({ theme }) => ({
     backgroundColor: "transparent",
     borderRadius: "3px",
@@ -22,7 +23,7 @@ const StyledButton = ({ children }: TypeButton) => {
     gap: "8px",
   }));
 
-  return <StyledButton>{children}</StyledButton>;
+  return <StyledButton onClick={onClick}>{children}</StyledButton>;
 };
 
 export default StyledButton;
