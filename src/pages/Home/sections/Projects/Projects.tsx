@@ -45,13 +45,13 @@ const Projects = () => {
           <Grid item xs={12} md={5}>
             <ProjectCard
               src={githubFinder}
-              technologies="Javascript, Typescript and React"
+              technologies="Javascript, Typescript, React, CSS and HTML"
               projectLink="https://luizrodrigues12.github.io/github-finder/"
               codeLink="https://github.com/luizrodrigues12/github-finder"
               projectName="GitHub Finder"
             >
-              Aplicação que expõe dados públicos dos usuários do GitHub, através
-              da API do mesmo.
+              Application that exposes public data from GitHub users, through
+              its API.
             </ProjectCard>
           </Grid>
         </Grid>
