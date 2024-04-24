@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Typography, styled } from "@mui/material";
-import avatar from "../../../../../public/images/avatar.jpg";
+import avatar from "../../../../assets/images/avatar.jpg";
+import Curriculo from "../../../../assets/files/curriculo-luiz.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import EmailIcon from "@mui/icons-material/Email";
 import StyledButton from "../../../../components/StyledButton/StyledButton";
@@ -71,7 +72,10 @@ const Hero = () => {
                   display="flex"
                   justifyContent="center"
                 >
-                  <StyledButton onClick={() => console.log("download")}>
+                  <StyledButton
+                    onClick={() => console.log("download")}
+                    href={Curriculo}
+                  >
                     <DownloadIcon />
                     <Typography>Download CV</Typography>
                   </StyledButton>
@@ -83,7 +87,7 @@ const Hero = () => {
                   display="flex"
                   justifyContent="center"
                 >
-                  <StyledButton onClick={() => console.log("Contact")}>
+                  <StyledButton onClick={() => console.log("Contact")} href="">
                     <EmailIcon />
                     <Typography>Contact Me</Typography>
                   </StyledButton>

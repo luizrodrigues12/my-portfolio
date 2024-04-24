@@ -4,10 +4,11 @@ import { ReactNode } from "react";
 interface TypeButton {
   children: ReactNode;
   onClick: () => void;
+  href: string;
 }
 
-const StyledButton = ({ children, onClick }: TypeButton) => {
-  const StyledButton = styled("button")(({ theme }) => ({
+const StyledButton = ({ children, onClick, href }: TypeButton) => {
+  const StyledButton = styled("a")(({ theme }) => ({
     backgroundColor: "transparent",
     borderRadius: "3px",
     padding: "5px 15px",
@@ -21,9 +22,15 @@ const StyledButton = ({ children, onClick }: TypeButton) => {
     justifyContent: "center",
     alignItems: "center",
     gap: "8px",
+    cursor: "pointer",
+    textDecoration: "none",
   }));
 
-  return <StyledButton onClick={onClick}>{children}</StyledButton>;
+  return (
+    <StyledButton onClick={onClick} href={href} target="_blank">
+      {children}
+    </StyledButton>
+  );
 };
 
 export default StyledButton;
