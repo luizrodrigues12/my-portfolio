@@ -5,6 +5,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import EmailIcon from "@mui/icons-material/Email";
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
+import "./Hero.css";
 
 const Hero = () => {
   const Styledhero = styled("div")(({ theme }) => ({
@@ -12,13 +13,14 @@ const Hero = () => {
     height: "100vh",
     display: "flex",
     alignItems: "center",
-    [theme.breakpoints.up("xs")]: {
-      paddingTop: "0px",
-      height: "100vh",
+    [theme.breakpoints.up(375)]: {},
+    [theme.breakpoints.up(413)]: {
+      marginTop: "0",
     },
-    [theme.breakpoints.up("md")]: {
-      paddingTop: "0px",
+    [theme.breakpoints.up(768)]: {
+      marginTop: "0",
     },
+    [theme.breakpoints.up("md")]: {},
   }));
 
   const StyledImage = styled("img")(({ theme }) => ({
@@ -27,8 +29,18 @@ const Hero = () => {
     border: `1px solid ${theme.palette.primary.contrastText}`,
     filter: "saturate(80%)",
     [theme.breakpoints.up("xs")]: {
+      width: "65%",
+    },
+    [theme.breakpoints.up(413)]: {
+      width: "75%",
+    },
+    [theme.breakpoints.up(520)]: {
       width: "50%",
     },
+    [theme.breakpoints.up(700)]: {
+      width: "40%",
+    },
+
     [theme.breakpoints.up("md")]: {
       width: "80%",
     },
@@ -54,6 +66,7 @@ const Hero = () => {
                 color={"primary.contrastText"}
                 variant="h1"
                 textAlign={"center"}
+                className="principal-name"
               >
                 Luiz Otávio
                 <hr style={{ width: "70%" }} />

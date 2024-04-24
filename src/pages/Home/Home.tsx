@@ -5,7 +5,15 @@ import Projects from "./sections/Projects/Projects";
 
 const Home = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        gap: "20px",
+        backgroundColor: "#232323",
+      }}
+    >
       <Navbar />
       <Hero />
       <About />

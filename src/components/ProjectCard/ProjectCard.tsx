@@ -27,6 +27,7 @@ const ProjectCard = ({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
+    height: "760px",
     border: `1px solid ${theme.palette.primary.contrastText}4`,
     "&:hover": {
       backgroundColor: theme.palette.primary.light,
@@ -44,7 +45,7 @@ const ProjectCard = ({
       </Typography>
       <img
         src={src}
-        width={"90%"}
+        width={"75%"}
         height={"100%"}
         style={{
           margin: "0px 10px",
