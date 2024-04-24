@@ -25,7 +25,7 @@ const Hero = () => {
     width: "75%",
     borderRadius: "50%",
     border: `1px solid ${theme.palette.primary.contrastText}`,
-    filter: "saturate(85%)",
+    filter: "saturate(80%)",
     [theme.breakpoints.up("xs")]: {
       width: "50%",
     },
@@ -56,12 +56,12 @@ const Hero = () => {
                 textAlign={"center"}
               >
                 Luiz Otávio
+                <hr style={{ width: "70%" }} />
               </Typography>
               <Typography
                 color={"primary.contrastText"}
                 variant="h2"
                 textAlign={"center"}
-                pt={2}
                 pb={2}
               >
                 FrontEnd Developer
