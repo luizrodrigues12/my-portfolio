@@ -1,17 +1,17 @@
-import { Card, Container, Grid, Typography, styled } from "@mui/material";
+import { Box, Card, Container, Grid, Typography, styled } from "@mui/material";
 import SchoolIcon from "@mui/icons-material/School";
 
 const About = () => {
   const StyledAbout = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.contrastText,
-    height: "60vh",
+    padding: "60px 0px",
     display: "flex",
     alignItems: "center",
     [theme.breakpoints.up("xs")]: {
-      paddingTop: "100px",
+      marginTop: "0px",
     },
     [theme.breakpoints.up("md")]: {
-      paddingTop: "0px",
+      marginTop: "0px",
     },
   }));
 
@@ -24,9 +24,28 @@ const About = () => {
     gap: "5px",
     textAlign: "center",
     padding: "10px",
-    boxShadow: "0px 0px 6px rgb(0,0,0,0.2)",
+    boxShadow: "0px 0px 3px rgb(0,0,0,0.5)",
     "&:hover": {
-      boxShadow: "0px 0px 6px rgb(0,0,0,0.4)",
+      backgroundColor: "rgb(240,240,240)",
+      boxShadow: "0px 0px 5px rgb(0,0,0,0.5)",
+    },
+  }));
+
+  const StyledSkillCard = styled("div")(({ theme }) => ({
+    width: "150px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    textAlign: "center",
+    boxShadow: "0px 0px 3px rgb(0,0,0,0.5)",
+    fontSize: "1.5em",
+    paddingBottom: "5px",
+    height: "40px",
+    [theme.breakpoints.up("md")]: {
+      width: "200px",
+    },
+    "&:hover": {
+      backgroundColor: "rgb(240,240,240)",
     },
   }));
   return (
@@ -38,12 +57,11 @@ const About = () => {
             display={"flex"}
             flexDirection={"column"}
             alignItems={"center"}
-            padding={0}
           >
-            <Typography variant="h2" marginBottom={5} textAlign={"center"}>
-              About Me
-            </Typography>
             <Grid item xs={12} md={12}>
+              <Typography variant="h2" marginBottom={5} textAlign={"center"}>
+                About Me
+              </Typography>
               <StyledCard>
                 <SchoolIcon fontSize="large" />
                 <Typography variant="h5">Education</Typography>
@@ -71,6 +89,37 @@ const About = () => {
                   backgroundColor: "black",
                 }}
               />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              md={12}
+              display={"flex"}
+              flexDirection={"column"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              <Typography variant="h2" mb={5} mt={2} textAlign={"center"}>
+                Skills
+              </Typography>
+              <Box
+                display={"flex"}
+                flexDirection={"row"}
+                alignItems={"center"}
+                justifyContent={"center"}
+                gap={"15px"}
+                flexWrap={"wrap"}
+                maxWidth={"950px"}
+              >
+                <StyledSkillCard>Javascript</StyledSkillCard>
+                <StyledSkillCard>Typescript</StyledSkillCard>
+                <StyledSkillCard>React</StyledSkillCard>
+                <StyledSkillCard>Next</StyledSkillCard>
+                <StyledSkillCard>Git</StyledSkillCard>
+                <StyledSkillCard>HTML</StyledSkillCard>
+                <StyledSkillCard>CSS</StyledSkillCard>
+                <StyledSkillCard>Node</StyledSkillCard>
+              </Box>
             </Grid>
           </Grid>
         </Container>

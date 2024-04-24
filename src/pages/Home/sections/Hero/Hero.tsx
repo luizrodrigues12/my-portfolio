@@ -9,11 +9,12 @@ import { AnimatedBackground } from "../../../../components/AnimatedBackground/An
 const Hero = () => {
   const Styledhero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
-    height: "110vh",
+    height: "100vh",
     display: "flex",
     alignItems: "center",
     [theme.breakpoints.up("xs")]: {
-      paddingTop: "100px",
+      paddingTop: "0px",
+      height: "100vh",
     },
     [theme.breakpoints.up("md")]: {
       paddingTop: "0px",
@@ -25,6 +26,12 @@ const Hero = () => {
     borderRadius: "50%",
     border: `1px solid ${theme.palette.primary.contrastText}`,
     filter: "saturate(85%)",
+    [theme.breakpoints.up("xs")]: {
+      width: "50%",
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "80%",
+    },
   }));
 
   return (
@@ -54,9 +61,10 @@ const Hero = () => {
                 color={"primary.contrastText"}
                 variant="h2"
                 textAlign={"center"}
+                pt={2}
                 pb={2}
               >
-                I'm a FrontEnd Developer
+                FrontEnd Developer
               </Typography>
               <Grid
                 container
