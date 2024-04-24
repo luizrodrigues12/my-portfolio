@@ -9,7 +9,7 @@ import { AnimatedBackground } from "../../../../components/AnimatedBackground/An
 const Hero = () => {
   const Styledhero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
-    height: "100vh",
+    height: "110vh",
     display: "flex",
     alignItems: "center",
     [theme.breakpoints.up("xs")]: {
