@@ -95,7 +95,10 @@ const Hero = () => {
                   display="flex"
                   justifyContent="center"
                 >
-                  <StyledButton onClick={() => console.log("Contact")} href="">
+                  <StyledButton
+                    onClick={() => console.log("Contact")}
+                    href="mailto:luizrodrigues2021@icloud.com"
+                  >
                     <EmailIcon />
                     <Typography>Contact Me</Typography>
                   </StyledButton>
