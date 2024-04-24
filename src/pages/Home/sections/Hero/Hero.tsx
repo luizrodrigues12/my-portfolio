@@ -83,6 +83,7 @@ const Hero = () => {
                   <StyledButton
                     onClick={() => console.log("download")}
                     href={Curriculo}
+                    width="100%"
                   >
                     <DownloadIcon />
                     <Typography>Download CV</Typography>
@@ -98,6 +99,7 @@ const Hero = () => {
                   <StyledButton
                     onClick={() => console.log("Contact")}
                     href="mailto:luizrodrigues2021@icloud.com"
+                    width="100%"
                   >
                     <EmailIcon />
                     <Typography>Contact Me</Typography>

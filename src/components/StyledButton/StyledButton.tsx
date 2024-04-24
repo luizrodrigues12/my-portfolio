@@ -5,14 +5,15 @@ interface TypeButton {
   children: ReactNode;
   onClick: () => void;
   href: string;
+  width: string;
 }
 
-const StyledButton = ({ children, onClick, href }: TypeButton) => {
+const StyledButton = ({ children, onClick, href, width }: TypeButton) => {
   const StyledButton = styled("a")(({ theme }) => ({
     backgroundColor: "transparent",
     borderRadius: "3px",
     padding: "5px 15px",
-    width: "100%",
+    width: width,
     border: `1px solid ${theme.palette.primary.contrastText}`,
     color: theme.palette.primary.contrastText,
     "&:hover": {
