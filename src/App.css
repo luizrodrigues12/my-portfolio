@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAV CSS */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+}
+
+.nav-link:hover {
+  background-color: #292929;
+  color: rgb(212, 212, 212);
+}
+
+/* Hero CSS */
+.principal-name {
+  font-size: 2.5em;
+}
+
+.image-project {
+  box-sizing: border-box;
+  margin: 20px 0px;
+  width: 70%;
+  height: 90%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+@media (min-width: 600px) {
+  .principal-name {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 900px) {
+  .principal-name {
+    font-size: 4.2em;
+  }
+}
+
+@media (min-width: 300px) {
+  .image-project {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 420px) {
+  .image-project {
+    box-sizing: border-box;
+    margin: 20px 0px;
+    width: 70%;
+    height: 90%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-y;
+  }
+}

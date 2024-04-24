@@ -1,6 +1,6 @@
 import ProjectCard from "../../../../components/ProjectCard/ProjectCard";
 import avatar from "../../../../assets/images/avatar.jpg";
-import githubFinder from "../../../../assets/images/github-finder.png";
+import githubFinder from "../../../../assets/images/githubFinder.jpg";
 import { Container, Grid, styled } from "@mui/material";
 
 const Projects = () => {
@@ -19,7 +19,7 @@ const Projects = () => {
   }));
 
   return (
-    <StyledProjects>
+    <StyledProjects id="projects">
       <Container maxWidth="lg">
         <Grid
           container

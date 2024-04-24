@@ -44,12 +44,9 @@ const ProjectCard = ({
         {projectName}
       </Typography>
       <img
-        src={src}
-        width={"75%"}
-        height={"100%"}
+        className="image-project"
         style={{
-          margin: "0px 10px",
-          padding: "30px 15px",
+          backgroundImage: `url(${src})`,
         }}
       />
       <Typography padding={"15px"} variant="subtitle1">
