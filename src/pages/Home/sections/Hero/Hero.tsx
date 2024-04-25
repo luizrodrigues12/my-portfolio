@@ -19,7 +19,6 @@ const Hero = () => {
     [theme.breakpoints.up(768)]: {
       marginTop: "0",
     },
-    [theme.breakpoints.up("md")]: {},
   }));
 
   const StyledImage = styled("img")(({ theme }) => ({
@@ -29,6 +28,9 @@ const Hero = () => {
     filter: "saturate(80%)",
     [theme.breakpoints.up("xs")]: {
       width: "65%",
+    },
+    [theme.breakpoints.up(300)]: {
+      width: "55%",
     },
     [theme.breakpoints.up(413)]: {
       width: "75%",
