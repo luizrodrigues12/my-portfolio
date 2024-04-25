@@ -5,7 +5,6 @@ import DownloadIcon from "@mui/icons-material/Download";
 import EmailIcon from "@mui/icons-material/Email";
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
-import "./Hero.css";
 
 const Hero = () => {
   const Styledhero = styled("div")(({ theme }) => ({
@@ -61,7 +60,14 @@ const Hero = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} md={7}>
+            <Grid
+              item
+              xs={12}
+              md={7}
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={"center"}
+            >
               <Typography
                 color={"primary.contrastText"}
                 variant="h1"
@@ -69,13 +75,13 @@ const Hero = () => {
                 className="principal-name"
               >
                 Luiz Otávio
-                <hr style={{ width: "70%" }} />
+                <hr className="hr-hero" />
               </Typography>
               <Typography
                 color={"primary.contrastText"}
                 variant="h2"
-                textAlign={"center"}
                 pb={2}
+                className="writing"
               >
                 FrontEnd Developer
               </Typography>

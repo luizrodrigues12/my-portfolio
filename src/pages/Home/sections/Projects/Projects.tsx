@@ -1,7 +1,7 @@
 import ProjectCard from "../../../../components/ProjectCard/ProjectCard";
 import githubFinder from "../../../../assets/images/githubFinder.jpg";
 import todoList from "../../../../assets/images/todoList.jpg";
-import { Container, Grid, styled } from "@mui/material";
+import { Container, Grid, Typography, styled } from "@mui/material";
 
 const Projects = () => {
   // Styled Projects Container
@@ -9,7 +9,9 @@ const Projects = () => {
     backgroundColor: theme.palette.primary.main,
     padding: "30px 20px",
     display: "flex",
+    flexDirection: "column",
     alignItems: "center",
+    color: "white",
     justifyContent: "center",
     [theme.breakpoints.up("xs")]: {},
     [theme.breakpoints.up("md")]: {
@@ -20,6 +22,9 @@ const Projects = () => {
 
   return (
     <StyledProjects id="projects">
+      <Typography variant="h2" marginBottom={4} textAlign={"center"}>
+        Projects
+      </Typography>
       <Container maxWidth="lg">
         <Grid
           container
