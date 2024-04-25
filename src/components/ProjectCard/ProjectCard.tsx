@@ -49,7 +49,7 @@ const ProjectCard = ({
           backgroundImage: `url(${src})`,
         }}
       />
-      <Typography padding={"15px"} variant="subtitle1">
+      <Typography style={{ width: "85%" }} padding={"15px"} variant="subtitle1">
         {children}
       </Typography>
       <Typography padding={"15px"} variant="subtitle1">

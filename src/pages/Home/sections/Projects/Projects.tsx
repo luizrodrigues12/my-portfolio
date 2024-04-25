@@ -1,6 +1,6 @@
 import ProjectCard from "../../../../components/ProjectCard/ProjectCard";
-import avatar from "../../../../assets/images/avatar.jpg";
 import githubFinder from "../../../../assets/images/githubFinder.jpg";
+import todoList from "../../../../assets/images/todoList.jpg";
 import { Container, Grid, styled } from "@mui/material";
 
 const Projects = () => {
@@ -30,16 +30,14 @@ const Projects = () => {
         >
           <Grid item xs={12} md={5} display={"flex"}>
             <ProjectCard
-              src={avatar}
-              technologies="Javascript, React, Node and Express"
-              projectLink=""
-              codeLink=""
+              src={todoList}
+              technologies="Javascript, Typescript, Node, Express and React"
+              projectLink="https://todo-luiz.netlify.app/"
+              codeLink="https://github.com/luizrodrigues12/todo-luiz-front"
               projectName="To-do List"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum
-              molestias aliquid, officiis, quibusdam non incidunt animi nulla
-              dolor sequi consequuntur quidem quia corporis! Eveniet obcaecati
-              accusantium dolore exercitationem nemo.
+              Simple fullstack application that can list and display to-dos,
+              using CRUD.
             </ProjectCard>
           </Grid>
           <Grid item xs={12} md={5}>
