@@ -78,13 +78,13 @@ const About = () => {
               variant="subtitle1"
               margin={"35px 0px"}
               maxWidth={"900px"}
+              fontFamily={"Arial, sans-serif"}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-              necessitatibus esse laudantium dicta aliquid ut sequi harum natus
-              nostrum quae reprehenderit provident, architecto magni eaque
-              mollitia, doloremque ipsam, eveniet distinctio. Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Perspiciatis reiciendis
-              quis saepe quaerat pariatur recusandae fugiat obcaecati.
+              I'm Luiz Otávio, Brazilian FrontEnd developer, 18 years old. The
+              focus of my studies, currently, is creating attractive and
+              responsive interfaces, but I confess that I also feel attracted to
+              the web backend universe. Either way, I'm ready to contribute my
+              creativity and technical skills to challenging projects.
             </Typography>
             <hr
               style={{
