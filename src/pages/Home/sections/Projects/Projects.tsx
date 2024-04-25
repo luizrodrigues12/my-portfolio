@@ -7,7 +7,6 @@ const Projects = () => {
   // Styled Projects Container
   const StyledProjects = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
-    padding: "30px 20px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

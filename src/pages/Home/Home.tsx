@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import About from "./sections/About/About";
 import Hero from "./sections/Hero/Hero";
@@ -18,6 +19,7 @@ const Home = () => {
       <Hero />
       <About />
       <Projects />
+      <Footer />
     </div>
   );
 };

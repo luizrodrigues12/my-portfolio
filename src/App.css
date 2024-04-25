@@ -34,6 +34,54 @@ html {
   margin: 20px auto;
 }
 
+.writing {
+  text-align: center;
+  display: block;
+
+  border-right: 1px solid white;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  width: 0;
+
+  animation: mark 0.5s step-end infinite, write 6s steps(23, end) infinite;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  box-shadow: 1px 1px 4px rgb(0, 0, 0);
+  color: white;
+}
+
+@keyframes write {
+  20% {
+    width: 16.5ch;
+  }
+
+  70% {
+    width: 16.5ch;
+  }
+
+  85% {
+    width: 0;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes mark {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
 @media (min-width: 600px) {
   .principal-name {
     font-size: 3em;
@@ -69,48 +117,13 @@ html {
   .hr-hero {
     margin: 35px auto;
   }
+  #projects {
+    padding: 440px 20px;
+  }
 }
 
 @media (min-width: 1110px) {
   .hr-hero {
     margin: 60px auto;
   }
-}
-
-@keyframes write {
-  20% {
-    width: 16.5ch;
-  }
-
-  70% {
-    width: 16.5ch;
-  }
-
-  85% {
-    width: 0;
-  }
-
-  100% {
-    width: 0;
-  }
-}
-
-@keyframes mark {
-  50% {
-    border-right-color: transparent;
-  }
-}
-
-.writing {
-  text-align: center;
-  display: block;
-
-  border-right: 1px solid white;
-
-  overflow: hidden;
-  white-space: nowrap;
-
-  width: 0;
-
-  animation: mark 0.5s step-end infinite, write 6s steps(23, end) infinite;
 }
