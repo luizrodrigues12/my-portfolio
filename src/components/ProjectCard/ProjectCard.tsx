@@ -19,7 +19,7 @@ const ProjectCard = ({
   codeLink,
   projectName,
 }: TypeProjectCard) => {
-  const ProjectCard = styled("div")(({ theme }) => ({
+  const ProjectCard = styled(Card)(({ theme }) => ({
     background: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
     display: "flex",
