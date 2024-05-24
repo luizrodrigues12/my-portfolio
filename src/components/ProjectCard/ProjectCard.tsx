@@ -19,7 +19,7 @@ const ProjectCard = ({
   codeLink,
   projectName,
 }: TypeProjectCard) => {
-  const ProjectCard = styled(Card)(({ theme }) => ({
+  const ProjectCard = styled("div")(({ theme }) => ({
     background: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
     display: "flex",
@@ -39,7 +39,8 @@ const ProjectCard = ({
       <Typography
         variant="h3"
         p={"15px 15px 0px 15px"}
-        alignSelf={"self-start"}
+        alignSelf={"center"}
+        fontWeight={"500"}
       >
         {projectName}
       </Typography>
