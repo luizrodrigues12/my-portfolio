@@ -24,9 +24,9 @@ const Hero = () => {
   const StyledImage = styled("img")(({ theme }) => ({
     width: "75%",
     borderRadius: "100%",
-    border: `3px solid ${theme.palette.primary.contrastText}`,
+    border: `1px solid ${theme.palette.primary.contrastText}`,
     filter: "saturate(60%) contrast(120%) brightness(0.95);",
-    boxShadow: "3px 3px 9px rgb(0, 0, 0, 0.7)",
+    boxShadow: "2px 2px 7px rgb(0, 0, 0, 0.5)",
     [theme.breakpoints.up("xs")]: {
       width: "65%",
     },
