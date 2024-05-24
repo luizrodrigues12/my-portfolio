@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography, styled } from "@mui/material";
-import avatar from "../../../../assets/images/avatar.jpg";
+import avatar from "../../../../assets/images/traced-avatar1.png";
 import Curriculo from "../../../../assets/files/curriculo-luiz.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import EmailIcon from "@mui/icons-material/Email";
@@ -23,9 +23,10 @@ const Hero = () => {
 
   const StyledImage = styled("img")(({ theme }) => ({
     width: "75%",
-    borderRadius: "50%",
-    border: `1px solid ${theme.palette.primary.contrastText}`,
-    filter: "saturate(80%)",
+    borderRadius: "100%",
+    border: `3px solid ${theme.palette.primary.contrastText}`,
+    filter: "saturate(60%) contrast(120%) brightness(0.95);",
+    boxShadow: "3px 3px 9px rgb(0, 0, 0, 0.7)",
     [theme.breakpoints.up("xs")]: {
       width: "65%",
     },
